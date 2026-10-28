@@ -193,1185 +193,507 @@ nav a:hover::after {
 .hero h1 span {
     display: inline;
     white-space: nowrap;
-    background:linear-gradient(
-            90deg,
-            #a78bfa,
-            #6366f1,
-            #c084fc
-        );
-
+    background:linear-gradient(90deg,#a78bfa,#6366f1,#c084fc);
     background-clip: text;
--webkit-background-clip: text;
-
-color: transparent;
--webkit-text-fill-color: transparent;
-
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
-
-
 .hero h2 {
-
     font-size: 22px;
-
     font-weight: 500;
-
     color: #d3d3df;
-
     margin-bottom: 22px;
-
 }
-
-
-/* Static designation */
-
+ 
+ /* Static designation */
 .typing-text {
-
     color: #a78bfa;
-
 }
-
-
 .hero-description {
-
     max-width: 650px;
-
     color: #9292a6;
-
     font-size: 15px;
-
     line-height: 1.9;
-
 }
-
-
 .hero-buttons {
-
     display: flex;
-
     gap: 14px;
-
     margin-top: 32px;
-
 }
-
-
 .btn {
-
     display: inline-flex;
-
     align-items: center;
-
     justify-content: center;
-
     gap: 10px;
-
     padding: 13px 22px;
-
     border-radius: 10px;
-
     font-size: 13px;
-
     font-weight: 700;
-
     transition: 0.35s;
-
 }
-
-
 .primary-btn {
-
     color: white;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--purple),
-            var(--blue)
-        );
-
-    box-shadow:
-        0 10px 30px
-        rgba(124, 92, 246, 0.25);
-
+    background:linear-gradient(135deg,var(--purple),var(--blue));
+    box-shadow:0 10px 30px rgba(124, 92, 246, 0.25);
 }
-
-
 .primary-btn:hover {
-
-    transform:
-        translateY(-4px);
-
-    box-shadow:
-        0 15px 40px
-        rgba(124, 92, 246, 0.4);
-
+    transform:translateY(-4px);
+    box-shadow:0 15px 40px rgba(124, 92, 246, 0.4);
 }
-
-
 .secondary-btn {
-
-    border:
-        1px solid var(--border);
-
-    background:
-        rgba(255, 255, 255, 0.03);
-
+    border:1px solid var(--border);
+    background:rgba(255, 255, 255, 0.03);
     color: white;
-
 }
-
-
 .secondary-btn:hover {
-
-    border-color:
-        var(--purple);
-
-    background:
-        rgba(139, 92, 246, 0.08);
-
-    transform:
-        translateY(-4px);
-
+    border-color:var(--purple);
+    background:rgba(139, 92, 246, 0.08);
+    transform:translateY(-4px);
 }
-
-
 .social-links {
-
     display: flex;
-
     gap: 12px;
-
     margin-top: 30px;
-
 }
-
-
 .social-links a {
-
     width: 43px;
     height: 43px;
-
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     border-radius: 12px;
-
-    border:
-        1px solid var(--border);
-
-    background:
-        rgba(255,255,255,0.025);
-
+    border:1px solid var(--border);
+    background:rgba(255,255,255,0.025);
     color: #a5a5b5;
-
     transition: 0.35s;
-
 }
-
-
 .social-links a:hover {
-
     color: white;
-
-    border-color:
-        var(--purple);
-
-    background:
-        rgba(139,92,246,0.12);
-
-    transform:
-        translateY(-5px);
-
+    border-color:var(--purple);
+    background:rgba(139,92,246,0.12);
+    transform:translateY(-5px);
 }
 
-
-/* =========================
-   PROFILE PHOTO
-   ========================= */
-
+/* ========================= PROFILE PHOTO ========================= */
 .hero-profile {
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
 }
-
-
 .profile-photo {
-
     position: relative;
-
     width: 260px;
     height: 320px;
-
     padding: 5px;
-
     border: 0;
-
     border-radius: 32px;
-
     overflow: visible;
-
     cursor: pointer;
-
-    background:
-        linear-gradient(
-            135deg,
-            #8b5cf6,
-            #6366f1,
-            #c084fc,
-            #ec4899,
-            #8b5cf6
-        );
-
+    background:linear-gradient(135deg,#8b5cf6,#6366f1,#c084fc,#ec4899,#8b5cf6);
     background-size: 300% 300%;
-
-    animation:
-        profileBorder 5s ease infinite;
-
-    box-shadow:
-        0 25px 70px
-        rgba(0, 0, 0, 0.4);
-
-    transition:
-        transform 0.45s ease,
-        box-shadow 0.45s ease,
-        filter 0.45s ease;
-
+    animation:profileBorder 5s ease infinite;
+    box-shadow:0 25px 70px rgba(0, 0, 0, 0.4);
+    transition:transform 0.45s ease,box-shadow 0.45s ease,filter 0.45s ease;
 }
-
-
 .profile-photo::before {
-
     content: "";
-
     position: absolute;
-
     inset: -8px;
-
     border-radius: 38px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #8b5cf6,
-            #6366f1,
-            #c084fc,
-            #ec4899
-        );
-
+    background:linear-gradient(135deg,#8b5cf6,#6366f1,#c084fc,#ec4899);
     background-size: 300% 300%;
-
-    animation:
-        profileBorder 5s ease infinite;
-
+    animation:profileBorder 5s ease infinite;
     filter: blur(14px);
-
     opacity: 0.45;
-
     z-index: -1;
-
-    transition:
-        opacity 0.45s ease,
-        filter 0.45s ease;
-
+    transition:opacity 0.45s ease,filter 0.45s ease;
 }
-
-
 .profile-photo:hover {
-
-    transform:
-        translateY(-8px)
-        scale(1.03);
-
-    box-shadow:
-        0 30px 80px
-        rgba(139, 92, 246, 0.45);
-
-    filter:
-        saturate(1.15);
-
+    transform:translateY(-8px)scale(1.03);
+    box-shadow: 0 30px 80px rgba(139, 92, 246, 0.45);
+    filter:saturate(1.15);
 }
-
-
 .profile-photo:hover::before {
-
     opacity: 0.85;
-
-    filter:
-        blur(18px);
-
+    filter:blur(18px);
 }
-
-
 .profile-photo img {
-
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
-
     border-radius: 27px;
-
-    border:
-        3px solid #080811;
-
+    border:3px solid #080811;
 }
-
-
 @keyframes profileBorder {
-
     0% {
-
-        background-position:
-            0% 50%;
-
+        background-position:0% 50%;
     }
-
     50% {
-
-        background-position:
-            100% 50%;
-
+        background-position:100% 50%;
     }
-
     100% {
-
-        background-position:
-            0% 50%;
-
+        background-position:0% 50%;
     }
-
 }
 
 
-/* =========================
-   PROFILE POPUP
-   ========================= */
-
+/* ========================= PROFILE POPUP ========================= */
 .profile-popup {
-
     position: fixed;
-
     inset: 0;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     padding: 30px;
-
-    background:
-        rgba(0, 0, 0, 0.75);
-
-    backdrop-filter:
-        blur(8px);
-
+    background:rgba(0, 0, 0, 0.75);
+    backdrop-filter:blur(8px);
     opacity: 0;
-
     visibility: hidden;
-
-    transition:
-        opacity 0.35s ease,
-        visibility 0.35s ease;
-
-    z-index: 2000;
-
+    transition:opacity 0.35s ease, visibility 0.35s ease;z-index: 2000;
 }
-
-
 .profile-popup.show {
-
     opacity: 1;
-
     visibility: visible;
-
 }
-
-
 .profile-popup-content {
-
     position: relative;
-
     max-width: 520px;
-
     max-height: 85vh;
-
-    transform:
-        scale(0.88);
-
-    transition:
-        transform 0.35s ease;
-
+    transform:scale(0.88);
+    transition:transform 0.35s ease;
 }
-
-
 .profile-popup.show
 .profile-popup-content {
-
-    transform:
-        scale(1);
-
+    transform:scale(1);
 }
-
-
 .profile-popup-content img {
-
     display: block;
-
     width: 100%;
-
     max-width: 520px;
-
     max-height: 85vh;
-
     object-fit: contain;
-
     border-radius: 22px;
-
-    box-shadow:
-        0 30px 90px
-        rgba(0, 0, 0, 0.5);
-
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
 }
-
-
 .profile-close {
-
     position: absolute;
-
     top: -15px;
-
     right: -15px;
-
     width: 40px;
     height: 40px;
-
-    border:
-        1px solid var(--border);
-
+    border:1px solid var(--border);
     border-radius: 50%;
-
-    background:
-        rgba(20, 20, 30, 0.9);
-
+    background: rgba(20, 20, 30, 0.9);
     color: white;
-
     font-size: 25px;
-
     line-height: 1;
-
     cursor: pointer;
-
     z-index: 2;
-
 }
-
-
 .profile-close:hover {
-
-    background:
-        var(--purple);
-
+    background: var(--purple);
 }
 
 
-/* =========================
-   SCROLL DOWN
-   ========================= */
-
+/* ========================= SCROLL DOWN ========================= */
 .scroll-down {
-
     position: absolute;
-
     bottom: 30px;
-
     left: 50%;
-
-    transform:
-        translateX(-50%);
-
+    transform: translateX(-50%);
     color: #77778a;
-
     font-size: 15px;
-
-    animation:
-        scrollArrow 2s ease infinite;
-
+    animation:scrollArrow 2s ease infinite;
 }
-
-
 @keyframes scrollArrow {
-
-    0%,
-    100% {
-
-        transform:
-            translate(-50%, 0);
-
+    0%,100% {
+        transform:translate(-50%, 0);
     }
-
     50% {
-
         transform:
-            translate(-50%, 8px);
-
+        translate(-50%, 8px);
     }
-
 }
 
 
-/* =========================
-   SECTION HEADING
-   ========================= */
-
+/* ========================= SECTION HEADING ========================= */
 .section-heading {
-
     margin-bottom: 55px;
-
 }
-
-
 .section-heading p {
-
     color: #a78bfa;
-
     font-size: 11px;
-
     letter-spacing: 4px;
-
     font-weight: 800;
-
     margin-bottom: 10px;
-
 }
-
-
 .section-heading h2 {
-
     font-size: 42px;
-
     line-height: 1.2;
-
     letter-spacing: -1px;
-
 }
-
-
 .section-heading h2 span {
-
     color: #a78bfa;
-
 }
+ 
 
-
-/* =========================
-   ABOUT
-   ========================= */
-
+/* ========================= ABOUT ========================= */
 .about-grid {
-
     display: grid;
-
-    grid-template-columns:
-        1fr
-        1fr;
-
+    grid-template-columns:1fr 1fr;
     gap: 70px;
-
     align-items: center;
-
 }
-
-
 .about-text p {
-
     color: #858597;
-
     font-size: 14px;
-
     line-height: 1.9;
-
     margin-bottom: 18px;
-
 }
-
-
 .about-text strong {
-
     color: #d1d1dc;
-
 }
-
-
 .text-link {
-
     display: inline-flex;
-
     align-items: center;
-
     gap: 8px;
-
     margin-top: 10px;
-
     color: #a78bfa;
-
     font-size: 13px;
-
     font-weight: 700;
-
 }
-
-
 .text-link i {
-
-    transition:
-        transform 0.3s;
-
+    transition:transform 0.3s;
 }
-
-
 .text-link:hover i {
-
-    transform:
-        translateX(5px);
-
+    transform:translateX(5px);
 }
-
-
 .about-cards {
-
     display: grid;
-
-    grid-template-columns:
-        1fr
-        1fr;
-
+    grid-template-columns:1fr 1fr;
     gap: 14px;
-
 }
-
-
 .mini-card {
-
     padding: 25px;
-
     border-radius: 18px;
-
-    background:
-        rgba(255,255,255,0.035);
-
-    border:
-        1px solid var(--border);
-
-    transition:
-        0.4s;
-
+    background:rgba(255,255,255,0.035);
+    border:1px solid var(--border);
+    transition:0.4s;
 }
-
-
 .mini-card:hover {
-
-    transform:
-        translateY(-7px);
-
-    border-color:
-        rgba(139,92,246,0.35);
-
+    transform:translateY(-7px);
+    border-color:rgba(139,92,246,0.35);
 }
-
-
 .mini-card i {
-
     color: #a78bfa;
-
     font-size: 22px;
-
     margin-bottom: 17px;
-
 }
-
-
 .mini-card h3 {
-
     font-size: 15px;
-
     margin-bottom: 7px;
-
 }
-
-
 .mini-card p {
-
     color: #77778a;
-
     font-size: 11px;
-
     line-height: 1.6;
-
 }
 
 
-/* =========================
-   SKILLS
-   ========================= */
-
+/* ========================= SKILLS ========================= */
 .skills-grid {
-
     display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
+    grid-template-columns:repeat(4, 1fr);
     gap: 15px;
-
 }
-
-
 .skill-card {
-
     padding: 25px;
-
     border-radius: 18px;
-
-    background:
-        rgba(255,255,255,0.035);
-
-    border:
-        1px solid var(--border);
-
-    transition:
-        0.4s;
-
+    background:rgba(255,255,255,0.035);
+    border:1px solid var(--border);
+    transition:0.4s;
 }
-
-
 .skill-card:hover {
-
-    transform:
-        translateY(-8px);
-
-    border-color:
-        rgba(139,92,246,0.35);
-
-    background:
-        rgba(139,92,246,0.06);
-
+    transform:translateY(-8px);
+    border-color:rgba(139,92,246,0.35);
+    background:rgba(139,92,246,0.06);
 }
-
-
 .skill-icon {
-
     width: 45px;
     height: 45px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     border-radius: 12px;
-
     margin-bottom: 18px;
-
     font-size: 21px;
-
 }
-
-
 .skill-icon.html {
-
     color: #f97316;
-
-    background:
-        rgba(249,115,22,0.1);
-
+    background:rgba(249,115,22,0.1);
 }
-
-
 .skill-icon.css {
-
     color: #3b82f6;
-
-    background:
-        rgba(59,130,246,0.1);
-
+    background:rgba(59,130,246,0.1);
 }
-
-
 .skill-icon.js {
-
     color: #facc15;
-
-    background:
-        rgba(250,204,21,0.1);
-
+    background:rgba(250,204,21,0.1);
 }
-
-
 .skill-icon.react {
-
     color: #38bdf8;
-
-    background:
-        rgba(56,189,248,0.1);
-
+    background:rgba(56,189,248,0.1);
 }
-
-
 .skill-icon.python {
-
     color: #60a5fa;
-
-    background:
-        rgba(96,165,250,0.1);
-
+    background:rgba(96,165,250,0.1);
 }
-
-
 .skill-icon.django {
-
     color: #4ade80;
-
-    background:
-        rgba(74,222,128,0.1);
-
+    background:rgba(74,222,128,0.1);
 }
-
-
 .skill-icon.bootstrap {
-
     color: #a855f7;
-
-    background:
-        rgba(168,85,247,0.1);
-
+    background:rgba(168,85,247,0.1);
 }
-
-
 .skill-icon.git {
-
     color: #f97316;
-
-    background:
-        rgba(249,115,22,0.1);
-
+    background:rgba(249,115,22,0.1);
 }
-
-
 .skill-card h3 {
-
     font-size: 15px;
-
     margin-bottom: 6px;
-
 }
-
-
 .skill-card p {
-
     color: #77778a;
-
     font-size: 10px;
-
 }
-
-
 .other-skills {
-
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 9px;
-
     margin-top: 30px;
-
 }
-
-
 .other-skills span {
-
     padding: 8px 13px;
-
     border-radius: 30px;
-
-    background:
-        rgba(255,255,255,0.03);
-
-    border:
-        1px solid var(--border);
-
+    background:rgba(255,255,255,0.03);
+    border:1px solid var(--border);
     color: #858597;
-
     font-size: 10px;
-
 }
 
 
-/* =========================
-   EXPERIENCE
-   ========================= */
-
+/* ========================= EXPERIENCE ========================= */
 .timeline {
-
     position: relative;
-
     max-width: 900px;
-
     margin: auto;
-
 }
-
-
 .timeline::before {
-
     content: "";
-
     position: absolute;
-
     left: 10px;
-
     top: 0;
-
     bottom: 0;
-
     width: 1px;
-
-    background:
-        rgba(139,92,246,0.25);
-
+    background:rgba(139,92,246,0.25);
 }
-
-
 .timeline-item {
-
     position: relative;
-
     padding-left: 50px;
-
     margin-bottom: 45px;
-
 }
-
-
 .timeline-dot {
-
     position: absolute;
-
     left: 4px;
-
     top: 8px;
-
     width: 13px;
     height: 13px;
-
     border-radius: 50%;
-
-    background:
-        var(--purple);
-
-    box-shadow:
-        0 0 0 6px
-        rgba(139,92,246,0.10);
-
+    background:var(--purple);
+    box-shadow:0 0 0 6px rgba(139,92,246,0.10);
 }
-
-
 .timeline-content {
-
     padding: 30px;
-
     border-radius: 18px;
-
-    background:
-        rgba(255,255,255,0.035);
-
-    border:
-        1px solid var(--border);
-
-    transition:
-        0.4s;
-
+    background:rgba(255,255,255,0.035);
+    border:1px solid var(--border);
+    transition:0.4s;
 }
-
-
 .timeline-content:hover {
-
-    transform:
-        translateX(8px);
-
-    border-color:
-        rgba(139,92,246,0.35);
-
+    transform:translateX(8px);
+    border-color:rgba(139,92,246,0.35);
 }
-
-
 .timeline-top {
-
     display: flex;
-
     justify-content: space-between;
-
     gap: 20px;
-
     margin-bottom: 8px;
-
 }
-
-
 .timeline-top h3 {
-
     font-size: 17px;
-
 }
-
-
 .timeline-top p {
-
     color: #a78bfa;
-
     font-size: 12px;
-
 }
-
-
 .timeline-top span {
-
     color: #77778a;
-
     font-size: 11px;
-
     white-space: nowrap;
-
 }
-
-
 .timeline-content > p {
-
     color: #666679;
-
     font-size: 11px;
-
     margin-bottom: 15px;
-
 }
-
-
 .timeline-content ul {
-
     padding-left: 17px;
-
     margin-bottom: 15px;
-
 }
-
-
 .timeline-content li {
-
     color: #77778a;
-
     font-size: 12px;
-
     margin-bottom: 5px;
-
 }
 
 
-/* =========================
-   PROJECTS
-   ========================= */
-
+/* ========================= PROJECTS ========================= */
 .project-grid {
-
     display: grid;
-
-    grid-template-columns:
-        1fr
-        1fr;
-
+    grid-template-columns:1fr 1fr;
     gap: 20px;
-
 }
-
-
 .project-card {
-
     position: relative;
-
     padding: 32px;
-
     border-radius: 22px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,0.065),
-            rgba(255,255,255,0.025)
-        );
-
-    border:
-        1px solid var(--border);
-
+    background:linear-gradient(145deg, rgba(255,255,255,0.065), rgba(255,255,255,0.025));
+    border:1px solid var(--border);
     overflow: hidden;
-
     transition: 0.45s;
-
 }
-
-
 .project-card::before {
-
     content: "";
-
     position: absolute;
-
     width: 150px;
     height: 150px;
-
     right: -80px;
     top: -80px;
-
     border-radius: 50%;
-
-    background:
-        rgba(139,92,246,0.12);
-
+    background:rgba(139,92,246,0.12);
     transition: 0.5s;
-
 }
-
-
 .project-card:hover::before {
-
-    transform:
-        scale(2);
-
+    transform:scale(2);
 }
-
-
 .project-card:hover {
-
-    transform:
-        translateY(-10px);
-
-    border-color:
-        rgba(139,92,246,0.35);
-
-    box-shadow:
-        0 25px 70px
-        rgba(0,0,0,0.35);
-
+    transform:translateY(-10px);
+    border-color:rgba(139,92,246,0.35);
+    box-shadow:0 25px 70px rgba(0,0,0,0.35);
 }
 
 

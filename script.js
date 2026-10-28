@@ -54,44 +54,15 @@ window.addEventListener("scroll",function () {
     if (window.scrollY > 500) {
         topBtn.style.display="flex";
         topBtn.style.alignItems="center";
-
-            topBtn.style.justifyContent =
-                "center";
-
-        }
-
-        else {
-
-            topBtn.style.display =
-                "none";
-
-        }
-
+        topBtn.style.justifyContent ="center";
     }
-
-);
-
-
-topBtn.addEventListener(
-
-    "click",
-
-    function () {
-
-        window.scrollTo({
-
-            top: 0,
-
-            behavior: "smooth"
-
-        });
-
+    else {
+        topBtn.style.display ="none";
     }
-
-);
-
+});
+topBtn.addEventListener("click",function () {
+    window.scrollTo({top: 0,behavior: "smooth"});
+});
 
 // ================= CURRENT YEAR =================
-
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+document.getElementById("year").textContent=new Date().getFullYear();
